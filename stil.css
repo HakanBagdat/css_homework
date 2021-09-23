@@ -1,0 +1,33 @@
+header {
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+}
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  margin: 0vw 5vw;
+  padding: 1 vw;
+  border: rgb(245, 12, 255) solid 3px;
+  border-radius: 25%;
+}
+
+header div img {
+  width: 10vw;
+  border-radius: 50%;
+}
+section {
+  display: flex;
+}
+
+section img {
+  width: 20vw;
+  height: 25vw;
+}
+
+p {
+opacity: ;
+}
