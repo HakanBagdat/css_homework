@@ -1,0 +1,27 @@
+
+
+.main {
+    margin:auto;
+    background-color: red;
+    width: 740px;
+    height: 740px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgb(99, 34, 34);
+}
+.hr{
+    position:absolute;
+    left:160px;
+    top:300px;
+    background-color: #fff;
+    width: 420px;
+    height: 140px;
+}
+
+.vr{
+    position:absolute;
+    left:300px;
+    top:160px;
+    background-color: #fff;
+    width: 140px;
+    height: 420px;
+}
