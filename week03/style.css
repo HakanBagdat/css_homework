@@ -1,0 +1,331 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+div.topbar /* Hiyerarsik-1*/{
+  background-color:#3d5467;
+  color: #da4167;
+  display: flex;
+  align-items: center;
+}
+.logo /* Class Secici-1 */{
+  
+  padding: 1rem;
+
+  flex-grow: 1;
+}
+div section img /* Hiyerarsik-2 */{
+  width: 8vw;
+}
+.navbar /* Class Secici-2 */ {
+  
+  flex-grow: 3;
+  list-style: none;
+  justify-content: space-between;
+}
+
+#list /* ID Secici-1 */{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+
+}
+#list a /* ID Secici-2 */{
+    font-size: 1.5rem;
+    color: inherit;
+    text-decoration: none;
+}
+ #list a:active /* Pseudo Secici-1 */{
+   font-size: 1.8rem;
+   color:lightcoral;
+ }
+
+#banner /* ID Secici-3 */{
+    background-color:linen;
+
+   /* 
+   Asagidaki css kodu yukardaki backgroud color yerine kullanarak daha farkli gorsellik olusturulabilir
+   background: url('https://source.unsplash.com/random/1024*1024') */
+    
+    margin: auto;
+    background-size: cover;
+    
+}
+#about h1 /* ID Secici-4 */{
+   
+
+    margin: auto;
+    width:70%;
+    font-size: 2.5rem;
+    color: #3d5467;
+    margin-bottom: 1.5rem;
+
+}
+#about  p{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:#da4167;
+    line-height: 1.5em;
+    margin:auto;
+    width:70%;
+    font-size: 2rem;
+    text-align: justify;
+    margin-bottom: 0.8rem;
+}
+
+#about .parag{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  
+  line-height: 1.5em;
+    margin:auto;
+    width:70%;
+    font-size: 2rem;
+    text-align: justify;
+    text-decoration: lightslategray underline;
+    letter-spacing: inherit;
+    margin-bottom: 2rem;
+
+}
+
+.content /* Class Secici-3 */{
+    
+    display: flex;
+    flex-direction: row;
+    padding: 2% 0;
+   
+
+}
+
+.item /* Class Secici-4 */ {
+   
+    flex-grow:1;
+    padding: 2%;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+section .item h2 /* Hiyerarsik-3*/{
+    color: #da4167;
+    margin-bottom: 1rem;
+}
+
+.form_container{
+   
+  /* Asagidaki kod ile belirtilen url den rastgele olarak background resmi secilmektedir Sayfayi yenilediginizde resmin degisme ihtimali yuksekir. */
+
+   background: url('https://source.unsplash.com/random/1020*1020') no-repeat;
+   background-size: cover;
+
+}
+.form_container h2{
+    text-align:center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    color: #da4167;
+    text-transform: capitalize;
+
+}
+.form{
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+form input, textarea /* Grup Secici-1 */{
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #da4167;
+}
+
+div form button /* Hiyerarsik-4 */{
+    background-color: #da4167;
+    padding: 1rem;
+    margin-top: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    width: 40%;
+   
+}
+
+.lang{
+background-color:lightblue;
+  
+  width:3em;
+
+  align-items: center;
+  font-size: 1em;
+  border-radius: 20%;
+  border: 0px;
+
+}
+.lang:hover /*Pseudo Secici-2*/{
+    background-color: #ddd;
+    box-shadow: 2px 2px 2px black;
+    
+}
+.lang a{
+    text-decoration: none;
+    
+
+}
+.activelang a{
+    cursor: none;
+    
+    
+
+}
+.activelang{
+    background-color: #ccc;
+}
+
+
+
+#rangebar{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    background-color:linen;
+
+}
+
+.label , .rng /* Grup Secici-2 */ {
+    display: flex;
+    flex-direction: column;
+
+}
+.label label{
+    margin: 19.5px;
+
+
+}
+
+.rng{
+   
+    width: 70%;
+    
+}
+
+.rng input{
+    margin: 7px;
+    width: 90%;
+}
+
+.talent{
+    background-color:linen;
+}
+
+.talent h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: #da4167
+    background-color:linen;
+}
+
+.talent p{
+    margin-bottom: 1em;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    
+}
+
+
+/* Dikkat  asagidaki css kodlari css generetorden olusturulan hazir paket kodlaridir. Kaynak site adsagida yer almaktadir. */
+
+/* https://www.cssportal.com/css-generators.php */
+
+input[type=range] {
+  height: 38px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 100%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 23px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #94177f;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4.5px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #29A94B;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 23px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 1px 1px 1px #000000;
+  background: #29A94B;
+  border-radius: 5px;
+  border: 1px solid #000000;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 23px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #29A94B;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #29A94B;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 1px #000000;
+  border: 1px solid #000000;
+  height: 30px;
+  width: 15px;
+  border-radius: 5px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #29A94B;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #29A94B;
+}
