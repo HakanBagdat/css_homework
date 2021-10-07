@@ -1,0 +1,293 @@
+* {
+  box-sizing: content-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background-image: linear-gradient(
+    to right top,
+    #fbfbfb,
+    #f9f9f9,
+    #f8f7f8,
+    #f6f6f6,
+    #f4f4f5
+  );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+body main {
+  width: 80%;
+  height: 98vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+#shape1, #shape2, #shape3, #shape4 {
+  border-radius: 50%;
+  position: absolute; 
+}
+#shape1 {
+  background-color: #33a8e5;
+  width: 6vw;
+  height: 6vw;
+  left: 8vw;
+  top: 1vw;
+  flex-grow: 0.4;
+  max-width: 8vw;
+}
+#shape2 {
+  background-color: #62baed;
+  width: 10vw;
+  height: 10vw;
+  right: 4vw;
+  top: -2vw;
+  flex-grow: 0;
+}
+#shape3 {
+  background-color: #62baed;
+  width: 15vw;
+  height: 15vw;
+  left: -60px;
+  bottom: 18vh;
+  display: flex;
+  flex-grow: 0;
+}
+#shape4 {
+  background-color: #62baed;
+  width: 15vw;
+  height: 15vw;
+  right: -6vw;
+  bottom: -4vw;
+}
+.main_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: auto;
+  position: relative;
+ 
+  width: 30%;
+  height: 82%;
+  border: rgb(247, 214, 214) 1px solid;
+  box-shadow: 2px 2px 20px grey;
+}
+.top {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background: rgb(53, 133, 232);
+  background: linear-gradient(
+    90deg,
+    rgba(53, 133, 232, 1) 32%,
+    rgba(51, 178, 231, 1) 69%
+  );
+  overflow: hidden;
+}
+.top_bar, .top_bar a {
+  display: flex;
+  position: relative;
+  flex-direction: rown;
+  justify-content: space-between;
+  margin: 1vw;
+  align-items: baseline;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.top_bar a{
+  margin: 0px;
+  padding: 0px;
+}
+#circle1, #circle2, #circle3{
+  position: absolute;
+  border-radius: 50%;
+  background-color: #bebbee8c;
+}
+#circle1 {
+  width: 3.5vw;
+  height: 3.5vw;
+  top: 1vh;
+  right: -0.6vw;
+  z-index: 1;
+}
+#circle2 {
+  width: 8vw;
+  height: 8vw;
+  top: 2vw;
+  left: 0.6vw;
+  z-index: 1;
+}
+#circle3 {
+  width: 1.3vw;
+  height: 1.3vw;
+  top: 2vw;
+  left: 13vw;
+  z-index: 1;
+}
+.back_surface {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background-color:#FDFDFD;
+}
+.profil { 
+  border-radius: 50%;
+  background-color: #def;
+  position: absolute;
+  width: 6vw;
+  height: 6vw;
+  align-self: center;
+  top: 3vw;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profil img{
+  object-fit:cover;
+  width: 6vw;
+  border-radius: 50%;
+}
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  background-color: white;
+  width: 84%;
+  height: 28vh;
+  align-self: center;
+  top: 6vw;
+  border-radius: 5px;
+  z-index: 1;
+  line-height: 1.5vw;
+   border: rgb(247, 214, 214) 1px solid;
+  box-shadow: 2px 2px 20px grey;
+}
+.banner #name {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.banner #social {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.9vw;
+  width: 100%;
+  color: grey;
+}
+#social svg:hover {
+  cursor: pointer;
+}
+#motto {
+  font-size: 0.8rem;
+  color: grey;
+  margin: 1vw;
+  text-align: center;
+}
+.middle_header {
+  position: absolute;
+  top: 19vw;
+  margin: 3vw 2vw;
+  color: grey;
+  text-transform: uppercase;
+  font-size: small;
+}
+.middle_area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: #fff;
+  position: absolute;
+  width: 84%;
+  height: 14vw;
+  align-self: center;
+  top: 24vw;
+  border-radius: 5px;
+  z-index: 0;
+  line-height: 1.5vw;
+   border: rgb(247, 214, 214) 1px solid;
+  box-shadow: 2px 2px 20px grey;
+}
+.ikon{
+  color: white;
+  margin-left: 1vw;
+ 
+}
+.ikon:hover{
+  border-radius: 45% 30%;
+}
+.envelope{
+  background-color:#33b3e7;
+  border-radius: 30% 45% ;
+  padding: .5vw;
+}
+.key{
+  background-color:#64E8B7;
+  border-radius: 30% 45% ;
+  padding: .5vw;
+}
+.key svg{
+  transform: rotate(40deg);
+} /* Anahtar ikonunu resme uygun olarak donduruulmustur.*/
+.folder{
+  background-color:#F888AD;
+  border-radius: 30% 45% ;
+  padding: .5vw;
+
+}
+.exit{
+  background-color:#F7E5A7;
+  border-radius: 30% 45% ;
+  padding: .5vw;
+}
+.middle_area .setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.setting_name {
+  font-family:  Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-align: left;
+  width: 200px;
+  margin-left: 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+.footer_name {
+  position: absolute;
+  bottom: 1vw;
+  margin: 2vw 2vw;
+  color: grey;
+  text-transform: uppercase;
+  font-size: small;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border: rgb(247, 214, 214) 1px solid;
+  box-shadow: 2px 2px 2px grey;
+}
+.footer svg{
+  cursor: pointer;
+  box-sizing: initial;
+}
+footer :hover{
+transform: scale(1.3);
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  margin: 0.6vw;
+}
