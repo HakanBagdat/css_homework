@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+body {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: #e3516e;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+}
+div.top {
+  width: 30vw;
+  height: 15vw;  /* height degerleri bilerek vw cinsinden verilmistir. Bu sekilde daha duzgun daireler elde etmek mümkündür. Aksi halde en boy oraniu farkli olmakta olup daireler ovallesmektedir*/
+  display: flex;
+  justify-content: flex-start;
+}
+div.bottom {
+  width: 30vw;
+  height: 30vw;
+  display: flex;
+  justify-content: flex-start;
+}
+.quarter {
+  width: 15vw;
+  height: 15vw;
+}
+.quartal1 {
+  background-color: #51b5a9;
+  border-radius: 100% 0 0 0;
+  align-self: flex-start;
+}
+.quartal2 {
+  background-color: #fade8b;
+  border-radius: 0 100% 0 0;
+  justify-self: flex-end;
+  align-self: flex-start;
+}
+.quartal3 {
+  background-color: #f7f3d7;
+  border-radius: 0 0 0 100%;
+  align-self: left;
+}
